@@ -7,7 +7,7 @@
 
       <title>@yield('title')</title>
       <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
-      <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+      <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
   </head>
   <body>
     <div id="appendDivNews">
