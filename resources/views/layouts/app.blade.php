@@ -7,7 +7,7 @@
 
       <title>@yield('title')</title>
       <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
-      <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+      <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   </head>
   <body>
     <div id="appendDivNews">
@@ -15,6 +15,15 @@
         <a href="/" class="navbar-title">Newssyy</a>
       </nav>
         {{ csrf_field()}}
+        @section('searchbox')
+          <div class="form-container">
+            <div class="form-wrapper">
+              <input id="search-input" type="text" placeholder="Search here..." required>
+              <button type="submit">Search</button>
+            </div>
+          </div>
+        @show
+
         @yield('container')
     </div>
   </body>

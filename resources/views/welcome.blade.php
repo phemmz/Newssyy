@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('container')
-    <div class="news">
+    <div id="news" class="news">
         @foreach ($news_sources as $news_source)
             <div class="sources-container">
                 <h4 class="source-title">{{$news_source['name']}}</h4>

@@ -11,3 +11,5 @@
 */
 Route::get('/', 'ApiController@getNewsSources');
 Route::get('/news/{source_id}', 'ApiController@getNews');
+Route::post('/searchNewsSources', 'ApiController@searchNewsSources');
+Route::post('/searchNews/{source_id}', 'ApiController@searchNews');
